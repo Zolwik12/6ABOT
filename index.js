@@ -28,7 +28,7 @@ client.on("ready",() => {
 })
 
 client.on("message", async message =>{
-    if(message.content === "/ping")return message.channel.send("Pong!");
+    if(message.content === "ping")return message.channel.send("Pong!");
 
     let prefix = config.prefix;
     if(!message.content.startsWith(prefix)) return;
